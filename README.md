@@ -7,7 +7,7 @@ First Name: Zhi Wen | Lastname: Soi | Mail: zhi.soi@students.unibe.ch | Affiliat
 # CPS-UAV: Unmanned Aerial Vehicle Testing Competition
 ## Submission (06.12.23)
 
-Here we submit our algorithm for the test generation competition for UAV SBFT24 and the conference ICSE24. Our algorithm uses a sequential learning mutation-based method that uses the previous flight trajectory as a reference for the placement of the following obstacles. In addition, our algorithm can recognize three different scenarios: the drone avoids the obstacles completely from the right (following the x-axes as reference), from the left, or goes in between the gap existing among the obstacles. After identifying the situation, there are certain deterministic mutations performed to the obstacles.
+This repository is part of the submission for the test generation competition for UAV SBFT24 and the conference ICSE24. Our algorithm uses a sequential learning mutation-based method that uses the previous flight trajectory as a reference for the placement of the following obstacles. In addition, our algorithm can recognize three different scenarios: the drone avoids the obstacles completely from the right (following the x-axes as reference), from the left, or goes in between the gap existing among the obstacles. After identifying the situation, there are certain deterministic mutations performed to the obstacles.
 
 We also provided a **TARGET_DISTANCE** of 1.5, this value references the minimum distance of the obstacles from the trajectory of the drone. This value is our objective, as soon as we reach that target, the simulation will reset the obstacle setup because we achieved the goal and we do not want to waste further simulations on small variations of the same mission.
 
