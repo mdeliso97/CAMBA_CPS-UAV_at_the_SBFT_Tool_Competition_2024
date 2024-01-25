@@ -6,7 +6,7 @@ import os
 import shutil
 import sys
 from decouple import config
-from random_generator import RandomGenerator
+from camba import Camba
 
 TESTS_FOLDER = config("TESTS_FOLDER", default="./generated_tests/")
 logger = logging.getLogger(__name__)
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         args = arg_parse()
         NUM_OBSTACLES = 2
         TARGET_DISTANCE = 1.5
-        generator = RandomGenerator(
+        generator = Camba(
             case_study_file=args.test,
             budget=args.budget,
             num_obstacles=NUM_OBSTACLES,
