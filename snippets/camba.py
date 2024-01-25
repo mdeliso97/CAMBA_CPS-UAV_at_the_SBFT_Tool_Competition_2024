@@ -11,7 +11,7 @@ from shapely.geometry import LineString
 from testcase import TestCase
 
 
-class RandomGenerator(object):
+class Camba(object):
     def __init__(
         self,
         case_study_file: str,
